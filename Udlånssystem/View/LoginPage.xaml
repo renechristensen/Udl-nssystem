@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Udlånssystem.View.LoginPage">
+    <ScrollView>
+        <Grid RowDefinitions="40,*,400" ColumnDefinitions="*,*,*">
+            <Grid Grid.Row="1" Grid.Column="1" RowDefinitions="*,*,*,*" Padding="10" RowSpacing="10" BackgroundColor="CornflowerBlue">
+                <Label Grid.Row="0" Text="Login" FontSize="23" HorizontalTextAlignment="Center" TextColor="White"/>
+                <Entry Grid.Row="1" Text="{Binding Email}" BackgroundColor="WhiteSmoke" HeightRequest="60" Placeholder="BrugerNavn"/>
+                <Entry Grid.Row="2" Text="{Binding Password}" BackgroundColor="WhiteSmoke"  IsPassword="True" HeightRequest="60" Placeholder="Password"/>
+                <Button Grid.Row="3" Text="Log ind" Command="{Binding LoginCommand}" FontAttributes="Bold" TextColor="White" Margin="0,20" HeightRequest="60" CornerRadius="10" BackgroundColor="LightGreen" WidthRequest="200" HorizontalOptions="Start"/>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>
